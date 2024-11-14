@@ -28,7 +28,8 @@ export default function Index() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const bill = parseFloat(billAmount);
-    const peopleCount = parseInt(people, 10);
+    const peopleCount = parseInt(people);
+    console.log(peopleCount);
     const tipPercent = parseFloat(tipPercentage);
 
     if (bill > 0 && peopleCount > 0) {
